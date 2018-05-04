@@ -1,0 +1,23 @@
+DROP TABLE IF EXISTS looneyTunes;
+
+CREATE TABLE looneyTunes(
+    CharacterId SERIAL PRIMARY KEY NOT NULL,
+    Name text NOT NULL,
+    Species text,
+    CharacterHeightInFeet decimal,
+    Saying text,
+    URL text
+);
+
+INSERT INTO looneyTunes
+( Name, Species, CharacterHeightInFeet, Saying, URL )
+VALUES
+('Bugs Bunny', 'Rabbit', 3.4, 'Whats up doc', null),
+('Daffy Duck', 'Duck', 3.2, 'Youre dispicable', null),
+('Porky Pig', 'Pig', 3, 'Thats all folks', null),
+('Tweety Bird', 'Bird', 0.2, 'I taut I saw a putty cat', null),
+('Tazmanian Devil', 'Devil', 2.4, 'Raw a poo', null),
+('Marvin the Martian', 'Alien', 2.4, 'Oh dear', null),
+('Foghorn Leghorn', 'Bird', 4.4, 'I say, I say.....', null),
+('Speedy Gonzales', 'Mouse', 0.2, 'Reeba Reeba! Undalae Undalae!', null),
+('Michael Jordan', 'Human', 6.7, 'Nike', null);

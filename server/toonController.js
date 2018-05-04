@@ -20,7 +20,7 @@ module.exports = {
         .then( (completeTableElement) => {
             console.log(completeTableElement);
             console.log(req.body);
-            res.status(200).send(products);
+            res.status(200).send(completeTableElement);
         }).catch( (errorMessage) => {
             console.log(errorMessage);
             res.status(500).send( errorMessage );
@@ -34,7 +34,7 @@ module.exports = {
         .then( (formattedTable) => {
             console.log(formattedTable);
             console.log(`Params of URL: ${req.params}`, `Query made in URL ${req.query}`);
-            res.status(200).send(products);
+            res.status(200).send(formattedTable);
         }).catch( (err) => {console.log(err); 
             res.status(500).send(err);
         })
