@@ -23,7 +23,7 @@ app.put('/api/looneyTunes/:id', toonController.uploadPictureLink);
 
 // need app.delete('/api/looneyTunes/:id', toonController. <new controller> )
 
-// need app.get by id on params
+// need app.get by id on params to access specific toon information
 
 const port = 3003;
 app.listen(port, () => console.log(`Port: ${port} has opened, all may rejoice and be glad.`))
